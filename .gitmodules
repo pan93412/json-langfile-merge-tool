@@ -1,0 +1,3 @@
+[submodule "I18N"]
+	path = I18N
+	url = https://github.com/pan93412/python-i18n-json
