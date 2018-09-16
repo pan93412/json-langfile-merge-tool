@@ -1,0 +1,10 @@
+{
+    "tranNoThisString": "- 翻译语言文件没有以下字串！",
+    "stringRemovedInOriginal": "- 翻译语言文件的以下字串可能已不再使用。",
+    "stringID": "  字串 ID：",
+    "stringContent": "  字串：",
+    "usage": "用法：main.py (原始语言文件) (翻译语言文件) [合并后文件位置]\n[合并后语言文件] 非必需，未设定则只输出比较结果。\n() 代表必须、[] 代表选用",
+    "autoAddNotify": "已经将合并处理完成的文件储存于该文件中：",
+    "welcomeMsg": "JSON 语言文件合并工具 | v1.0 测试版本\n",
+    "notAutoMerge": "因为您未指定合并后文件位置，因此只单纯输出两者比较结果。"
+}

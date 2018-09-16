@@ -10,8 +10,10 @@ You can modify any option in this file. :-)
 # in "lang" folder.
 # Just copy the filename of the locale file of your language
 # to here. :-D
+# or directly read "lang/README", but it may not latest.
 #
 # Default: zh_TW.json
 # Chinese (Taiwan): zh_TW.json
+# Chinese (China):  zh_CN.json
 # English (US):     en_US.json
 langFile = "zh_TW.json"

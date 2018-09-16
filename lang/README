@@ -1,0 +1,23 @@
+* Filename (langFile): en_US.json
+  Language: English (US)
+  Note: The language file's quality isn't good, if you are
+  English native speaker and also know Chinese, you can improve
+  it! :-)
+
+* Filename (langFile): zh_TW.json
+  Language: Chinese (Taiwan)
+  Note: Default language file.
+
+* Filename (langFile): zh_CN.json
+  Language: Chinese (China)
+  Note: Use machine translate <http://zhconvert.org/>
+  to convert zh_TW.json to it. If you are Chinese (China)
+  native speaker and also know Chinese (Taiwan), you can improve
+  it! :-)
+
+* Filename (langFile): zh_HK.json
+  Language: Chinese (Hong Kong)
+  Note: Use machine translate <http://zhconvert.org/>
+  to convert zh_TW.json to it. If you are Chinese (Hong Kong)
+  native speaker and also know Chinese (Taiwan), you can improve
+  it! :-)
