@@ -3,7 +3,7 @@
 JSON 語言檔案字串更新工具
 The string updater of JSON language file.
 
-若您的 json 語言檔案與 VS Code 之格式相同，
+若您的 json 語言檔案與以下格式相同，
 則您的軟體同樣也能透過這工具更新翻譯字串。
 
 * 格式範例 Format Example

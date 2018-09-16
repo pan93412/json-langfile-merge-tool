@@ -5,6 +5,6 @@
     "stringContent": "  String: ",
     "usage": "Usage: main.py (Original language file) (Translated language file) [The merged language file path]\n[The merged language file path] is optional，If you don't set that, the program will just print the diff result.\n() means require、[] means optional",
     "autoAddNotify": "The merged language file already save to ",
-    "welcomeMsg": "VS Code language file diff tool | v1.0 Beta\n",
+    "welcomeMsg": "JSON language file diff tool | v1.0 Beta\n",
     "notAutoMerge": "Because you don't set \"The merged language file path\", we just print the diff result."
 }

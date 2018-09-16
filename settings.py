@@ -12,4 +12,6 @@ You can modify any option in this file. :-)
 # to here. :-D
 #
 # Default: zh_TW.json
-langFile = "en_US.json"
+# Chinese (Taiwan): zh_TW.json
+# English (US):     en_US.json
+langFile = "zh_TW.json"
