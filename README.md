@@ -1,53 +1,60 @@
-# JSON String Updater
-If you want to see Chinese (Traditional) version, please
-read README_zh.md instead.
+# JSON 字串更新工具
+若您想閱讀英文版本，請改閱讀 README_en.md。
 
-Welcome to improve the translation, docs & program! You can read "How to contribute my translation?" know how to contribute.
+歡迎改善翻譯、文件與程式！您可以閱讀「怎麽貢獻翻譯？」得知貢獻方法。
 
-## Usage
+## 用法
 ```
-Usage: main.py (Original language file) (Translated language file) [The merged language file path]
-[The merged language file path] is optional，If you don't set that, the program will just print the diff result.
-() means require、[] means optional
+用法：main.py (原始語言檔案) (翻譯語言檔案) [合併後檔案位置] [--obsolete] [--sort]
+() 代表必須、[] 代表選用
+
+[合併後儲存位置]
+        翻譯語言檔案與原始語言檔案合併後 JSON 檔案的儲存位置
+
+[--obsolete]
+        若指定則檢查與移除翻譯語言檔案中原始語言檔案不存在的字串，
+        若有指定合併後儲存位置，則也會將處理完成的結果輸出到合併後儲存位置。
+
+[--sort]
+        若指定則排序語言檔案的字串 ID。
 ```
 
-For example:
+舉個例子：
 
 `main.py lang/zh_TW.json lang/en_US.json lang/new.json`
 
-It will diff lang/zh_TW.json & lang/en_US.json and based on the translated language file, and then clone en_US.json to new.json.
+其將比較 lang/zh_TW.json 與 lang/en_US.json，並以翻譯語言檔案為基準，並且複製一份 en_US.json 到 new.json。
 
-If zh_TW.json has ABC string but en_US.json doesn't, it will copy the ABC string to new.json & print the diff result.
+若 zh_TW.json 有 ABC 字串，但 en_US.json 沒有，則其將會複製 ABC 字串到 new.json，並顯示出比較結果。
 
-If en_US.json has BCD string but zh_TW.json doesn't, it will remove BCD string from new.json & print the diff result.
+若 en_US.json 有 BCD 字串，但 zh_TW.json 沒有，則其將會從 new.json 中移除 BCD 字串，並顯示出比較結果。
 
 `main.py lang/zh_TW.json lang/en_US.json`
 
-It will diff lang/zh_TW.json & lang/en_US.json and priority to the translated language file.
+其將比較 lang/zh_TW.json 與 lang/en_US.json，並以翻譯語言檔案為基準。
 
-If zh_TW.json has ABC string but en_US.json doesn't, it will print the diff result BUT **DOESN'T MAKE CHANGE IN ANY FILES**.
+若 zh_TW.json 有 ABC 字串，但 en_US.json 沒有，則其將顯示出比較結果，但 **不修改任何檔案** 。
 
-If en_US.json has BCD string but zh_TW.json doesn't, it will print the diff result BUT ALSO **DOESN'T MAKE CHANGE IN ANY FILES**.
+若 en_US.json 有 BCD 字串，但 zh_TW.json 沒有，則其將顯示出比較結果，但仍然 **不修改任何檔案** 。
 
-## Advanced Usage
-### How to translate?
-1. Go to lang folder, and copy zh_TW.json (or en_US.json, but my English is too bad, so not recommends) to your language, ex. zh_CN.json 
-2. Open your language file, and translate.
-3. Go back to the program's root directory, and open settings.py, and change "langFile" to your language file's filename.
-4. All done!
+## 進階使用
+### 怎麽翻譯？
+1. 前往 lang 資料夾，並複製 zh_TW.json (或 en_US.json，但作者英文很爛，不推薦這麼做) 至您的語言，例如 zh_CN.json
+2. 開啟語言檔案並翻譯。
+3. 回到本程式的根目錄開啟 settings.py，並修改 "langFile" 至您語言檔案的檔案名稱。
+4. 完成！
 
-### How to merge translation to latest?
-Just input `main.py lang/zh_TW.json lang/(your language file's filename) lang/(your language file's filename).new` on your terminal.
+### 怎麽合併語言檔案至最新狀態？
+只需在您的終端器上輸入 `main.py lang/zh_TW.json lang/(您的語言檔案的檔案名稱) lang/(您的語言檔案的檔案名稱).new`
 
-And remove (your language file's filename), and rename (your language file's filename).new to (your language file's filename)
+且移除您的 (您的語言檔案的檔案名稱)，並重新命名 (您的語言檔案的檔案名稱).new 到 (您的語言檔案的檔案名稱)
 
-You can translate it now! You can read "How to translate?" to know
-how to translate the program.
+就可以翻譯了！您可以閱讀「怎麽翻譯？」來得知怎麽翻譯這個程式
 
-### How to contribute my translation?
-1. Fork the program's master branch
-2. Upload your language file to "lang" folder.
-3. Make a Pull Request! (Branch: master)
+### 如何貢獻翻譯？
+1. 分支此程式的 master 分支
+2. 上傳您的語言檔案至 lang 資料夾
+3. 建立 Pull Request！（分支：master）
 
-## Author
+## 作者
 pan93412 \<<pan93412@gmail.com>\>, 2018.

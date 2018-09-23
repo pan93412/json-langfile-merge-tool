@@ -3,10 +3,12 @@
   Note: The language file's quality isn't good, if you are
   English native speaker and also know Chinese, you can improve
   it! :-)
+  Last Update: 2018-09-16 (NOT LATEST!)
 
 * Filename (langFile): zh_TW.json
   Language: Chinese (Taiwan)
   Note: Default language file.
+  Last Update: 2018-09-26
 
 * Filename (langFile): zh_CN.json
   Language: Chinese (China)
@@ -14,6 +16,7 @@
   to convert zh_TW.json to it. If you are Chinese (China)
   native speaker and also know Chinese (Taiwan), you can improve
   it! :-)
+  Last Update: 2018-09-16 (NOT LATEST!)
 
 * Filename (langFile): zh_HK.json
   Language: Chinese (Hong Kong)
@@ -21,3 +24,4 @@
   to convert zh_TW.json to it. If you are Chinese (Hong Kong)
   native speaker and also know Chinese (Taiwan), you can improve
   it! :-)
+  Last Update: 2018-09-16 (NOT LATEST!)

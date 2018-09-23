@@ -1,10 +1,15 @@
 {
-    "tranNoThisString": "- 翻譯語言檔案沒有以下字串！",
-    "stringRemovedInOriginal": "- 翻譯語言檔案的以下字串可能已不再使用。",
-    "stringID": "  字串 ID：",
-    "stringContent": "  字串：",
-    "usage": "用法：main.py (原始語言檔案) (翻譯語言檔案) [合併後檔案位置]\n[合併後語言檔案] 非必需，未設定則只輸出比較結果。\n() 代表必須、[] 代表選用",
     "autoAddNotify": "已經將合併處理完成的檔案儲存於該檔案中：",
-    "welcomeMsg": "JSON 語言檔案合併工具 | v1.0 測試版本\n",
-    "notAutoMerge": "因為您未指定合併後檔案位置，因此只單純輸出兩者比較結果。"
+    "fileNotFound": "找不到原始語言檔案或目標語言檔案。",
+    "mergeFileExists": "合併後檔案位置已存在，請手動刪除該檔案後再次重試",
+    "notAutoMerge": "因為您未指定合併後檔案位置，因此只單純輸出兩者比較結果。",
+    "stringContent": "  字串：",
+    "stringID": "  字串 ID：",
+    "stringRemovedInOriginal": "- 翻譯語言檔案的以下字串可能已不再使用。",
+    "tranNoThisString": "- 翻譯語言檔案沒有以下字串！",
+    "usage_0": "用法：main.py (原始語言檔案) (翻譯語言檔案) [合併後檔案位置] [--obsolete] [--sort]\n() 代表必須、[] 代表選用\n",
+    "usage_1": "[合併後儲存位置]\n\t翻譯語言檔案與原始語言檔案合併後 JSON 檔案的儲存位置\n",
+    "usage_2": "[--obsolete]\n\t若指定則檢查與移除翻譯語言檔案中原始語言檔案不存在的字串，\n\t若有指定合併後儲存位置，則也會將處理完成的結果輸出到合併後儲存位置。\n",
+    "usage_3": "[--sort]\n\t若指定則排序語言檔案的字串 ID。",
+    "welcomeMsg": "JSON 語言檔案合併工具 | v1.0 測試版本\n"
 }
